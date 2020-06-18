@@ -1,0 +1,17 @@
+{
+  "name": "ember-addon-generator",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Ember addon blueprint to create a monorepo ",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "ember-cli": "~3.11.0"
+  },
+  "engines": {
+    "node": "^10.13.0",
+    "yarn": "^1.17.3"
+  }
+}
