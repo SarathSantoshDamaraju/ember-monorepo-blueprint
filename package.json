@@ -6,12 +6,15 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "start": "yarn workspace sample-addon start"
+  },
   "devDependencies": {
-    "ember-cli": "~3.11.0"
+    "ember-cli": "~3.7.1",
+    "lerna": "^3.22.1"
   },
   "engines": {
-    "node": "^10.13.0",
+    "node": ">=10.* || >=12.*",
     "yarn": "^1.17.3"
   }
 }

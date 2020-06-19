@@ -7,5 +7,7 @@ To create an Add-on type
 and you see an addon created in `packages/{addon-name}`
 
 ## Road map to v1
-- [ ] Add Lerna and yarn workspaces
-- [ ] Add Ember addon docs in the blueprint
+- [x] Add Lerna and yarn workspaces
+- [x] Add Ember addon docs in the blueprint
+- [ ] Add package management with lerna
+- [ ] Add examples folder
