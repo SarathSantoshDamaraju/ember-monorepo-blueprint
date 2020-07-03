@@ -1,15 +1,5 @@
 {
-  "version": "independent",
   "npmClient": "yarn",
-  "packages": [
-    "packages/*"
-  ],
-  "publish": {
-    "allowBranch": [
-      "dev",
-      "master"
-    ],
-    "conventionalCommits": true
-  },
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "version": "independent"
 }

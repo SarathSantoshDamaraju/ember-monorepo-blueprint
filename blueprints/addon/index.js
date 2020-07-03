@@ -31,9 +31,9 @@ module.exports = {
    */
   afterInstall(options) {
     const lowercasedName = formattedName(options.entity.name);
-    const DocumentationPackageLocation = ['packages', 'documentation', 'package.json'].join('/');
-    const DocumentationRouterLocation = ['packages', 'documentation', 'tests', 'dummy', 'app', 'router.js'].join('/');
-    const DocumentationTemplatesLocation = ['packages', 'documentation', 'tests', 'dummy', 'app', 'templates', 'docs.hbs'].join('/');
+    const DocumentationPackageLocation = ['documentation', 'package.json'].join('/');
+    const DocumentationRouterLocation = ['documentation', 'tests', 'dummy', 'app', 'router.js'].join('/');
+    const DocumentationTemplatesLocation = ['documentation', 'tests', 'dummy', 'app', 'templates', 'docs.hbs'].join('/');
     return this.insertIntoFile(
       DocumentationPackageLocation,
       (`"@addon/${lowercasedName}": "^0.1.0",`),
@@ -41,7 +41,7 @@ module.exports = {
     ).then(() => {
       return this.insertIntoFile(
         DocumentationTemplatesLocation,
-        (`{{nav.item ${lowercasedName }} "docs.components.addon-${lowercasedName}"}}`),
+        (`{{nav.item ${lowercasedName } "docs.components.addon-${lowercasedName}"}}`),
         { before: '{{/viewer.nav}}' }
       )
     }).then(() => {

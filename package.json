@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn workspace sample-addon start",
+    "start": "yarn workspace Addon-documentation start",
     "lerna:version": "lerna version",
     "lerna:publish": "lerna publish from-git --yes",
     "diff": "lerna diff",

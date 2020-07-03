@@ -3,12 +3,12 @@
 /vendor/
 
 # compiled output
-**/dist/
-**/tmp/
-
-# dependencies
-**/bower_components/
-**/node_modules/
+node_modules
+cjs
+esm
+umd
+dist
+bower_components
 
 # misc
 /coverage/
@@ -18,3 +18,4 @@
 /.node_modules.ember-try/
 /bower.json.ember-try
 /package.json.ember-try
+
