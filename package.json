@@ -35,9 +35,6 @@
     "stylelint-config-standard": "^19.0.0",
     "stylelint-order": "^4.0.0"
   },
-  "pre-commit": [
-    "lint-staged"
-  ],
   "lint-staged": {
     "*.js": [
       "yarn run lint:js"
