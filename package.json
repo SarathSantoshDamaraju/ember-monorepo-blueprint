@@ -9,7 +9,7 @@
   "scripts": {
     "start": "yarn workspace Addon-documentation start",
     "lerna:version": "lerna version",
-    "lerna:publish": "lerna publish from-git --yes",
+    "lerna:publish": "lerna version --ignore-changes 'packages/documentation/**' lerna publish from-package --yes",
     "diff": "lerna diff",
     "test:all": "lerna run test",
     "test:changes": "lerna run test --since",
