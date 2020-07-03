@@ -9,5 +9,6 @@ and you see an addon created in `packages/{addon-name}`
 ## Road map to v1
 - [x] Add Lerna and yarn workspaces
 - [x] Add Ember addon docs in the blueprint
-- [ ] Add package management with lerna
+- [x] Add package management with lerna
+- [x] Add lints and husky
 - [ ] Add examples folder

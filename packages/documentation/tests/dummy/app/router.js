@@ -8,6 +8,8 @@ const Router = AddonDocsRouter.extend({
 
 Router.map(function() {
   docsRoute(this, function() {
+this.route("medium-editor");
+this.route("test-2");
     /* Routes will be appended above */
   });
 });

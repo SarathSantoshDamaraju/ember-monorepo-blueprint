@@ -1,20 +1,55 @@
 {
   "name": "ember-addon-generator",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "description": "Ember addon blueprint to create a monorepo ",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn workspace sample-addon start"
+    "start": "yarn workspace sample-addon start",
+    "lerna:version": "lerna version",
+    "lerna:publish": "lerna publish from-git --yes",
+    "diff": "lerna diff",
+    "test:all": "lerna run test",
+    "test:changes": "lerna run test --since",
+    "lint:js": "eslint . --fix",
+    "lint:style": "stylelint **/*.scss",
+    "lint:hbs": "ember-yrn add-lint .",
+    "lint": "yarn lint:js && yarn lint:style && yarn lint:hbs",
+    "lint-staged": "lint-staged"
   },
   "devDependencies": {
-    "ember-cli": "~3.7.1",
-    "lerna": "^3.22.1"
+    "babel-eslint": "^10.1.0",
+    "ember-cli": "~3.12.0",
+    "ember-cli-eslint": "^5.1.0",
+    "ember-cli-stylelint": "^3.0.2",
+    "ember-template-lint": "^1.13.2",
+    "ember-try": "^1.1.0",
+    "eslint-plugin-ember": "^7.7.2",
+    "eslint-plugin-node": "^11.0.0",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.0.7",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^13.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-order": "^4.0.0"
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "yarn run lint:js"
+    ],
+    "*.hbs": [
+      "yarn run lint:hbs"
+    ],
+    "*.scss": [
+      "yarn run lint:styles"
+    ]
   },
   "engines": {
-    "node": ">=10.* || >=12.*",
-    "yarn": "^1.17.3"
+    "node": ">=10.* || >=12.*"
   }
 }

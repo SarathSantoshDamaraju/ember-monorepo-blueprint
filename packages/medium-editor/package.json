@@ -1,7 +1,7 @@
 {
-  "name": "@addon/<%= name %>",
+  "name": "@addon/medium-editor",
   "version": "0.1.0",
-  "description": "<%= description %>",
+  "description": "ember addon",
   "keywords": [
     "ember-addon"
   ],

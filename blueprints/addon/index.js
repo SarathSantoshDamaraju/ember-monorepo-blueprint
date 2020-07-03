@@ -19,7 +19,7 @@ module.exports = {
     const name = formattedName(options.entity.name);
     return {
       name,
-      description: options.description,
+      description: options.description
     };
   },
 
