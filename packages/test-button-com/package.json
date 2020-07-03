@@ -1,5 +1,5 @@
 {
-  "name": "@sarathsantoshdamaraju/message-bubble",
+  "name": "@sarathsantoshdamaraju/test-button-com",
   "version": "0.0.0",
   "description": "ember addon",
   "keywords": [
@@ -57,6 +57,5 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  },
-  "gitHead": "c41ef6e1ca3d82ed37308bf735f1edb55084a594"
+  }
 }
