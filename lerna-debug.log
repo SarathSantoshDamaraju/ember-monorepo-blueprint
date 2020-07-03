@@ -1,0 +1,8 @@
+52 warn complete Waiting for 2 child processes to exit. CTRL-C to exit immediately.
+53 error Error: Command failed: git tag @sarathsantoshdamaraju/button-test@0.1.1 -m @sarathsantoshdamaraju/button-test@0.1.1
+53 error fatal: tag '@sarathsantoshdamaraju/button-test@0.1.1' already exists
+53 error
+53 error     at makeError (/Users/sarathd/Desktop/mono-repo/node_modules/execa/index.js:174:9)
+53 error     at /Users/sarathd/Desktop/mono-repo/node_modules/execa/index.js:278:16
+53 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+53 error     at async Promise.all (index 0)
