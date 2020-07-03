@@ -1,6 +1,6 @@
 {
-  "name": "@sarathsantoshdamaraju/button-test",
-  "version": "0.1.1",
+  "name": "@sarathsantoshdamaraju/message-bubble",
+  "version": "0.1.0",
   "description": "ember addon",
   "keywords": [
     "ember-addon"
@@ -57,6 +57,5 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  },
-  "gitHead": "471a2f9d7287f90a9f8eb126ef2faa6936d7b7a0"
+  }
 }
